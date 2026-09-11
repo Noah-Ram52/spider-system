@@ -1,9 +1,15 @@
 import "./Header.css"
 
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <header className="header">
-      Spider System
+      <div className="header__buttons">
+        <Link to="/">Home</Link>
+        <Link to="/spider-collection">Spider Collection</Link>
+        <Link to="/about">About</Link>
+      </div>
     </header>
   )
 }

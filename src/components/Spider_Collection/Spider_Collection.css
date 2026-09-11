@@ -1,0 +1,30 @@
+.spider-collection {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* Shake animation */
+@keyframes shake-diagonal {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-5px, -4px); }
+  50%  { transform: translate(4px, 3px); }
+  75%  { transform: translate(-2px, -1px); }
+  100% { transform: translate(0, 0); }
+}
+
+.spider-collection__background {
+  display: block;
+  position: absolute;
+  inset: -8px;
+
+  /*Width and Height fix white space, when applying the shake animation*/
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  object-fit: cover;
+  z-index: -1;
+
+  /* Apply the shake animation */
+  animation: shake-diagonal 3s ease-in-out infinite;
+}

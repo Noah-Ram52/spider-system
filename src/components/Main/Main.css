@@ -1,0 +1,31 @@
+.main {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  min-height: calc(100vh - 75px);
+  overflow: hidden;
+}
+
+.main__content {
+  position: absolute;
+  inset: 0;
+}
+
+.main__background {
+  display: block;
+  inset: -8px;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
+  object-fit: cover;
+  z-index: -1;
+  position: absolute;
+  animation: SpiderAnimation 3s ease-in-out infinite;
+}
+
+
+@keyframes SpiderAnimation {
+  0% { transform: translate(0, -30px); }
+  
+  50% { transform: translate(0, 5px); }
+  
+  100% { transform: translate(0, -30px); }
+}
