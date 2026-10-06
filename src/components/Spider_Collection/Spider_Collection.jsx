@@ -14,27 +14,27 @@ import MiguelOHara from "../../assets/spider-man_2099.png";
   const spiderCards = [
   {
     id: "Spider-Man 1967",
-    name: "Spider-Man Peter Parker Earth-616",
+    name: "Spider-Man Peter Parker",
     image: PeterParker,
-    description: "Add this character's universe, abilities, and story here.",
+    description: "Earth-616\u2019s original Spider-Man, Peter Parker uses his spider powers and scientific ingenuity to protect others while balancing everyday life.",
   },
   {
     id: "Spider-Man 1994",
     name: "Spider-Man Miles Morales",
     image: MilesMorales,
-    description: "Replace this sample content with your character details.",
+    description: "Miles Morales is a Brooklyn hero with camouflage and bioelectric powers who brings his own identity to the Spider-Man mantle.",
   },
   {
     id: "Spider-Woman",
     name: "Spider-Woman Gwen Stacy",
     image: GwenStacy,
-    description: "You can also add an image path to each card's data.",
+    description: "Gwen Stacy is Earth-65\u2019s Spider-Woman, also known as Ghost-Spider. She balances protecting her world with her passion for music.",
   },
   {
     id: "Spider-Man 2099",
     name: "Spider-Man 2099 Miguel O'Hara",
     image: MiguelOHara,
-    description: "You can also add an image path to each card's data.",
+    description: "Miguel O\u2019Hara is a futuristic geneticist who uses organic webs, talons, and enhanced senses to fight corporate corruption.",
   },
 ];
 
