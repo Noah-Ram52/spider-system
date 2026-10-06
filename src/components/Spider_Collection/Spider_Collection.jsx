@@ -6,21 +6,34 @@ import ModalCards from "../ModalCards/ModalCards";
 
 // Images
 import SpiderVerse from "../../assets/spider-verse.png";
+import PeterParker from "../../assets/spider-man-amazing-ultimate-peter-mj-relationship.png";
+import MilesMorales from "../../assets/spider-man-beyond-the-spider-verse.png";
+import GwenStacy from "../../assets/gwen stacy.png";
+import MiguelOHara from "../../assets/spider-man_2099.png";
 
-const spiderCards = [
+  const spiderCards = [
   {
-    id: "spider-1",
-    name: "Spider Card 1",
+    id: "Spider-Man 1967",
+    name: "Spider-Man Peter Parker Earth-616",
+    image: PeterParker,
     description: "Add this character's universe, abilities, and story here.",
   },
   {
-    id: "spider-2",
-    name: "Spider Card 2",
+    id: "Spider-Man 1994",
+    name: "Spider-Man Miles Morales",
+    image: MilesMorales,
     description: "Replace this sample content with your character details.",
   },
   {
-    id: "spider-3",
-    name: "Spider Card 3",
+    id: "Spider-Woman",
+    name: "Spider-Woman Gwen Stacy",
+    image: GwenStacy,
+    description: "You can also add an image path to each card's data.",
+  },
+  {
+    id: "Spider-Man 2099",
+    name: "Spider-Man 2099 Miguel O'Hara",
+    image: MiguelOHara,
     description: "You can also add an image path to each card's data.",
   },
 ];
