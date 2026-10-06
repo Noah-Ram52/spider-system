@@ -3,6 +3,7 @@
   position: relative;
   min-height: calc(100vh - 75px);
   overflow: hidden;
+  
 }
 
 .main__content {
@@ -14,18 +15,62 @@
   display: block;
   inset: -8px;
   width: calc(100% + 16px);
-  height: calc(100% + 16px);
+  height: calc(100% + 38px);
   object-fit: cover;
   z-index: -1;
   position: absolute;
   animation: SpiderAnimation 3s ease-in-out infinite;
 }
 
+.main__direct_link {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 30%;
+  padding-top: 120px;
+  margin-left: 40px;
+}
+
+.main__direct_link-text {
+  margin: 0;
+  font-size: clamp(1.25rem, 2vw, 2.2rem);
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-family: "Avengance", Impact, sans-serif;
+}
+
+.main__portal-link {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+  outline: none;
+  top: 0;
+  left: 0;
+}
+
+.main__spiderverse_portal {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid #000;
+  border-radius: 18px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.main__portal-link:hover .main__spiderverse_portal,
+.main__portal-link:focus-visible .main__spiderverse_portal {
+  cursor: pointer;
+  transform: scale(1.05);
+}
 
 @keyframes SpiderAnimation {
   0% { transform: translate(0, -30px); }
-  
-  50% { transform: translate(0, 5px); }
-  
+  50% { transform: translate(0, 5px); } 
   100% { transform: translate(0, -30px); }
 }

@@ -5,6 +5,7 @@
   overflow: hidden;
 }
 
+
 /* Shake animation */
 @keyframes shake-diagonal {
   0%   { transform: translate(0, 0); }
@@ -28,3 +29,5 @@
   /* Apply the shake animation */
   animation: shake-diagonal 3s ease-in-out infinite;
 }
+
+

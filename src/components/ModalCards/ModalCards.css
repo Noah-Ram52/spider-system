@@ -1,0 +1,120 @@
+.modal-cards {
+position: relative;
+  z-index: 1;
+  margin: 0px 25px;
+  padding: 48px 24px;
+  box-sizing: border-box;
+}
+
+.modal-cards__grid {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.modal-cards__item {
+	display: flex;
+	min-height: 180px;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 12px;
+	padding: 100px;
+	border: 2px solid rgba(255, 255, 255, 0.75);
+	border-radius: 14px;
+	background: rgba(8, 12, 30, 0.86);
+	color: #fff;
+	cursor: pointer;
+	font: inherit;
+	text-align: center;
+	transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.modal-cards__item:hover,
+.modal-cards__item:focus-visible {
+	transform: translateY(-4px);
+	background: rgba(27, 38, 83, 0.96);
+}
+
+.modal-cards__item:focus-visible,
+.modal-cards__close:focus-visible {
+	outline: 3px solid #fff;
+	outline-offset: 3px;
+}
+
+.modal-cards__image {
+	width: 100%;
+	height: 110px;
+	object-fit: cover;
+	border-radius: 8px;
+}
+
+.modal-cards__title {
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+.modal-cards__hint {
+	color: #cbd5ff;
+	font-size: 0.9rem;
+}
+
+.modal-cards__backdrop {
+	position: fixed;
+	z-index: 1000;
+	inset: 0;
+	display: grid;
+	place-items: center;
+	padding: 24px;
+	background: rgba(0, 0, 0, 0.72);
+}
+
+.modal-cards__dialog {
+	position: relative;
+	width: min(520px, 100%);
+	max-height: min(80vh, 720px);
+	overflow-y: auto;
+	padding: 32px;
+	border: 2px solid #fff;
+	border-radius: 16px;
+	background: #10162c;
+	color: #fff;
+	box-shadow: 0 18px 60px rgba(0, 0, 0, 0.5);
+}
+
+.modal-cards__dialog h2 {
+	margin: 12px 36px 12px 0;
+}
+
+.modal-cards__dialog p {
+	line-height: 1.6;
+}
+
+.modal-cards__dialog-image {
+	display: block;
+	width: 100%;
+	max-height: 280px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.modal-cards__close {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 40px;
+	height: 40px;
+	border: 0;
+	border-radius: 50%;
+	background: #fff;
+	color: #10162c;
+	cursor: pointer;
+	font-size: 1.75rem;
+	line-height: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.modal-cards__item {
+		transition: none;
+	}
+}
