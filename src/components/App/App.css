@@ -3,5 +3,20 @@
   min-height: 100vh;
   max-width: 100%;
 
+  /* ADDED: stack the header, page content, and footer vertically */
+  display: flex;
+  flex-direction: column;
 }
 
+/* ADDED: fill the space between the header and footer */
+.page__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ADDED: prevent the header and footer from shrinking */
+.page > :first-child,
+.page > :last-child {
+  flex-shrink: 0;
+}

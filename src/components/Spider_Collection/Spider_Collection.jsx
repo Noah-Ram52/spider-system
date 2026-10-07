@@ -39,6 +39,11 @@ import MiguelOHara from "../../assets/spider-man_2099.png";
 ];
 
 function Spider_Collection() {
+
+  const handleRedirect = () => {
+    window.location.href = 'https://www.marvel.com/search?offset=0&query=Spider-man';
+  };
+
   return (
     <div className="spider-collection">
       <img 
@@ -46,6 +51,13 @@ function Spider_Collection() {
         src={SpiderVerse} 
         alt="SpiderVerse" />
       <ModalCards cards={spiderCards} />
+      <p className="spider-collection__spider-man_characters">
+        Here you can view more 
+        <button 
+          className="spider-collection__spider-man_characters_link" 
+          onClick={handleRedirect}> Spider-Man characters</button> 
+        from the Marvel Universe!
+      </p>
     </div>
   );
 }
