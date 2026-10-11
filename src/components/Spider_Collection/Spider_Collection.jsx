@@ -40,8 +40,9 @@ import MiguelOHara from "../../assets/spider-man_2099.png";
 
 function Spider_Collection() {
 
+  const redirect = (url) => window.open(url, '_blank');
   const handleRedirect = () => {
-    window.location.href = 'https://www.marvel.com/search?offset=0&query=Spider-man';
+    redirect('https://www.marvel.com/search?offset=0&query=Spider-man')
   };
 
   return (
