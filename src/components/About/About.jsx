@@ -16,7 +16,7 @@ function About() {
     window.location.href = 'https://www.penguinrandomhouseretail.com/book/?isbn=9781302968960';
   };
   const handleGwenStacyRedirect = () => {
-    window.location.href = 'https://www.marvel.com/comics/issue/16926/amazing_fantasy_1962_15';
+    window.location.href = 'https://www.amazon.com/Spider-Gwen-Gwen-Stacy-Jason-Latour/dp/1302919865';
   };
   const handleMiguelOHaraRedirect = () => {
     window.location.href = 'https://www.midtowncomics.com/p/1257419-spider-man-2099-classic-vol-1-tp-new-printing/';
