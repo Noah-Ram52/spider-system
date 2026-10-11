@@ -16,3 +16,69 @@
   z-index: -1;
 }
 
+.about__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Welcome Home", sans-serif;
+}
+
+.about__title {
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.about__description {
+  font-size: 28px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0;
+}
+
+.about__comics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 16px;
+  margin: 275px 0 16px 0;
+  padding-bottom: 0px;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.about__comic-button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.about__comic-button:hover {
+  cursor: pointer;
+  animation: movingcomicslinks 1s ease-in-out infinite alternate;
+}
+
+.about__comic-image {
+  display: block;
+  width: 250px;
+  max-width: 100%;
+  height: 380px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: solid 2.5px #000;
+}
+
+
+@keyframes movingcomicslinks {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}

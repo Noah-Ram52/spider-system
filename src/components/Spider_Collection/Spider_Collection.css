@@ -17,14 +17,14 @@
   font-family: "Welcome Home", sans-serif;
   font-size: 36px;
   font-weight: 900;
-  color: #0caa3c;
+  color: #20f832;
   -webkit-text-stroke: 0.45px #000;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px rgb(121, 50, 50);
 }
 
 .spider-collection__spider-man_characters_link {
   display: inline-block;
-  color: #0caa3c;
+  color: #20f832;
   border-radius: 999px;
   border: 3.5px solid #000;
   background: transparent;
@@ -41,21 +41,12 @@
   transform: translateY(-3px);
   background: transparent;
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.28);
+  color: #06daff;
 }
 
 .spider-collection__spider-man_characters_link:focus-visible {
   outline: 3px solid #111;
   outline-offset: 3px;
-}
-
-
-/* Shake animation */
-@keyframes shake-diagonal {
-  0%   { transform: translate(0, 0); }
-  25%  { transform: translate(-5px, -4px); }
-  50%  { transform: translate(4px, 3px); }
-  75%  { transform: translate(-2px, -1px); }
-  100% { transform: translate(0, 0); }
 }
 
 .spider-collection__background {
@@ -72,5 +63,16 @@
   /* Apply the shake animation */
   animation: shake-diagonal 3s ease-in-out infinite;
 }
+
+
+/* Shake animation */
+@keyframes shake-diagonal {
+  0%   { transform: translate(0, 0); }
+  25%  { transform: translate(-5px, -4px); }
+  50%  { transform: translate(4px, 3px); }
+  75%  { transform: translate(-2px, -1px); }
+  100% { transform: translate(0, 0); }
+}
+
 
 
